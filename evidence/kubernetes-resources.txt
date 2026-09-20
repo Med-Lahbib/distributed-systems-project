@@ -1,0 +1,13 @@
+﻿NAME                             READY   STATUS    RESTARTS   AGE
+pod/flask-app-86465f49c4-6n98l   1/1     Running   0          101s
+pod/flask-app-86465f49c4-dtqdz   1/1     Running   0          94s
+
+NAME                        TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)   AGE
+service/flask-app-service   ClusterIP   10.96.74.43   <none>        80/TCP    13m
+
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/flask-app   2/2     2            2           13m
+
+NAME                                   DESIRED   CURRENT   READY   AGE
+replicaset.apps/flask-app-69c9bd746f   0         0         0       4m35s
+replicaset.apps/flask-app-86465f49c4   2         2         2       13m
