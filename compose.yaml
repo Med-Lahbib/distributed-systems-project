@@ -1,0 +1,30 @@
+services:
+  app:
+    build:
+      context: .
+    image: msc-de1-flask-app:1.0.0
+    container_name: flask-app
+    ports:
+      - "5000:5000"
+
+    restart: unless-stopped
+
+    security_opt:
+      - no-new-privileges:true
+
+    cap_drop:
+      - ALL
+
+    read_only: true
+
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://localhost:5000/')"
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 5s
+      

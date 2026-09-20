@@ -1,0 +1,34 @@
+# Git
+.git
+.gitignore
+
+# Python virtual environment
+.venv
+venv
+
+# Python cache
+__pycache__
+*.py[cod]
+.pytest_cache
+
+# IDE / editor files
+.vscode
+.idea
+
+# Environment / secrets
+.env
+.env.*
+
+# Tests and local artifacts
+tests
+htmlcov
+.coverage
+
+# Project documentation/evidence not needed at runtime
+evidence
+security
+*.pdf
+
+# OS files
+.DS_Store
+Thumbs.db
