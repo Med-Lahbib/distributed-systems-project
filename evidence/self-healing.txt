@@ -1,0 +1,8 @@
+﻿=== BEFORE POD DELETION ===
+NAME                         READY   STATUS    RESTARTS   AGE   IP           NODE              NOMINATED NODE   READINESS GATES
+flask-app-86465f49c4-6n98l   1/1     Running   0          17m   10.244.2.5   msc-de1-worker2   <none>           <none>
+flask-app-86465f49c4-dtqdz   1/1     Running   0          17m   10.244.1.5   msc-de1-worker    <none>           <none>
+=== AFTER POD DELETION AND AUTOMATIC REPLACEMENT ===
+NAME                         READY   STATUS    RESTARTS   AGE    IP           NODE              NOMINATED NODE   READINESS GATES
+flask-app-86465f49c4-dtqdz   1/1     Running   0          20m    10.244.1.5   msc-de1-worker    <none>           <none>
+flask-app-86465f49c4-vkrlh   1/1     Running   0          117s   10.244.2.6   msc-de1-worker2   <none>           <none>

@@ -1,0 +1,1 @@
+﻿User=appuser Ports={"5000/tcp":{}} Cmd=["python","run.py"] Healthcheck={"Test":["CMD-SHELL","python -c \"import urllib.request; urllib.request.urlopen('http://localhost:5000/')\" || exit 1"],"Interval":30000000000,"Timeout":3000000000,"StartPeriod":5000000000,"Retries":3}

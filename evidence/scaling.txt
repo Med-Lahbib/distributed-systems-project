@@ -1,0 +1,10 @@
+﻿=== SCALE FROM 2 TO 3 REPLICAS ===
+NAME                         READY   STATUS    RESTARTS   AGE     IP           NODE              NOMINATED NODE   READINESS GATES
+flask-app-86465f49c4-2wf4d   1/1     Running   0          9s      10.244.2.7   msc-de1-worker2   <none>           <none>
+flask-app-86465f49c4-dtqdz   1/1     Running   0          20m     10.244.1.5   msc-de1-worker    <none>           <none>
+flask-app-86465f49c4-vkrlh   1/1     Running   0          2m22s   10.244.2.6   msc-de1-worker2   <none>           <none>
+=== SCALE BACK TO 2 REPLICAS ===
+NAME                         READY   STATUS        RESTARTS   AGE     IP           NODE              NOMINATED NODE   READINESS GATES
+flask-app-86465f49c4-2wf4d   1/1     Terminating   0          28s     10.244.2.7   msc-de1-worker2   <none>           <none>
+flask-app-86465f49c4-dtqdz   1/1     Running       0          20m     10.244.1.5   msc-de1-worker    <none>           <none>
+flask-app-86465f49c4-vkrlh   1/1     Running       0          2m41s   10.244.2.6   msc-de1-worker2   <none>           <none>

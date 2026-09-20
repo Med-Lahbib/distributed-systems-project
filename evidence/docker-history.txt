@@ -1,0 +1,22 @@
+﻿IMAGE          CREATED             CREATED BY                                      SIZE      COMMENT
+b6047415c97b   About an hour ago   CMD ["python" "run.py"]                         0B        buildkit.dockerfile.v0
+<missing>      About an hour ago   HEALTHCHECK {Test:[CMD-SHELL python -c "impoΓÇª   0B        buildkit.dockerfile.v0
+<missing>      About an hour ago   EXPOSE [5000/tcp]                               0B        buildkit.dockerfile.v0
+<missing>      About an hour ago   USER appuser                                    0B        buildkit.dockerfile.v0
+<missing>      About an hour ago   RUN /bin/sh -c chown -R appuser:appuser /appΓÇª   41kB      buildkit.dockerfile.v0
+<missing>      About an hour ago   COPY run.py . # buildkit                        12.3kB    buildkit.dockerfile.v0
+<missing>      About an hour ago   COPY app ./app # buildkit                       32.8kB    buildkit.dockerfile.v0
+<missing>      About an hour ago   RUN /bin/sh -c useradd --create-home --uid 1ΓÇª   69.6kB    buildkit.dockerfile.v0
+<missing>      About an hour ago   RUN /bin/sh -c pip install --no-cache-dir -rΓÇª   15.2MB    buildkit.dockerfile.v0
+<missing>      About an hour ago   COPY requirements.txt . # buildkit              12.3kB    buildkit.dockerfile.v0
+<missing>      18 hours ago        WORKDIR /app                                    8.19kB    buildkit.dockerfile.v0
+<missing>      36 hours ago        CMD ["python3"]                                 0B        buildkit.dockerfile.v0
+<missing>      36 hours ago        RUN /bin/sh -c set -eux;  for src in idle3 pΓÇª   16.4kB    buildkit.dockerfile.v0
+<missing>      36 hours ago        RUN /bin/sh -c set -eux;   savedAptMark="$(aΓÇª   41.4MB    buildkit.dockerfile.v0
+<missing>      36 hours ago        ENV PYTHON_SHA256=5c8462af5790baf43a321a1559ΓÇª   0B        buildkit.dockerfile.v0
+<missing>      36 hours ago        ENV PYTHON_VERSION=3.12.14                      0B        buildkit.dockerfile.v0
+<missing>      36 hours ago        ENV GPG_KEY=7169605F62C751356D054A26A821E680ΓÇª   0B        buildkit.dockerfile.v0
+<missing>      36 hours ago        RUN /bin/sh -c set -eux;  apt-get update;  aΓÇª   4.94MB    buildkit.dockerfile.v0
+<missing>      36 hours ago        ENV LANG=C.UTF-8                                0B        buildkit.dockerfile.v0
+<missing>      36 hours ago        ENV PATH=/usr/local/bin:/usr/local/sbin:/usrΓÇª   0B        buildkit.dockerfile.v0
+<missing>      2 days ago          # debian.sh --arch 'amd64' out/ 'trixie' '@1ΓÇª   87.6MB    debuerreotype 0.17
